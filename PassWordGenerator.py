@@ -18,10 +18,10 @@ window.geometry("720x480")
 window.iconbitmap("R.ico")
 window.config(background='#dee5dc')
 
-# creat the principal frame
+# create the principal frame
 frame = Frame(window, bg='#dee5dc')
 
-# creat image
+# create image
 width = 300
 height = 300
 image = PhotoImage(file="lock.png").zoom(10).subsample(30)
