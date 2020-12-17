@@ -11,17 +11,17 @@ def generate_password():
     password_entry.delete(0, END)
     password_entry.insert(0, password)
 
-# creer la fenetre
+
 window = Tk()
 window.title("My pass word Generator")
 window.geometry("720x480")
 window.iconbitmap("R.ico")
 window.config(background='#dee5dc')
 
-# creer la frame principale
+# creat the principal frame
 frame = Frame(window, bg='#dee5dc')
 
-# creation d'image
+# creat image
 width = 300
 height = 300
 image = PhotoImage(file="lock.png").zoom(10).subsample(30)
@@ -43,8 +43,8 @@ generate_password_button.pack(fill=X)
 
 right_frame.grid(row=0, column=1, sticky=W)
 
-# ajout de la frame au centre
+# centralise frame
 frame.pack(expand=YES)
 
-# affichage
+
 window.mainloop()
